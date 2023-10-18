@@ -12,9 +12,17 @@ function back(){
         return;
     }
     page = page -1;
+    pageNumberUpdate()
 }
 paginationbtns[1].addEventListener('click', moveforward);
 function moveforward(){
     console.log("moveforward")
     page = page +1;
+    pageNumberUpdate()
+}
+
+function pageNumberUpdate() {
+    let span = paginationElement.getElementsByTagName("span")[0];
+    //console.log(span);
+    span.innerText = page;
 }
