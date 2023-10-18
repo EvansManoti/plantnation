@@ -108,4 +108,8 @@ body{
     padding: 5px;
     border-radius: 0px 10px;
 }
-
+.a-plant span{
+    margin-left: 9px;
+    font-size: large;
+    font-weight: bold;
+}
