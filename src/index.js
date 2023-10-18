@@ -33,6 +33,20 @@ function pageUpdate() {
     span.innerText = page;
 }
 
+function searchPlants(querry){
+    if(querry === "" || querry===null){return}
+
+    fetch(
+        "https://corsproxy.io/?" +
+        `https://trefle.io/api/v1/plants/search?token=${token}=${querry}
+        {method: "GET", contentType:"application/json", }
+        `).then((response) => response.json())
+        .then(function (data) {
+            console.log (data);
+        });
+}
+
+
 function displayPlants(data){
     let divElement = document.getElementById("all-plants");
     let plants =""
@@ -60,7 +74,7 @@ function getPlant(){
         "https://corsproxy.io/?" +
         `https://trefle.io/api/v1/plants?token=${token}&page=${page}`,{
         method: "GET",
-        contentType:"applicatio/json",
+        contentType:"application/json",
     })
     .then((response) => response.json())
     .then(function (data)  {
