@@ -98,14 +98,14 @@ body{
     flex-wrap: wrap;
 }
 .a-plant img{
-    height: 150px;
+    height: 30em;
     width: auto;
     display: block;
 }
 .a-plant div{
     background-color: orange;
     color: white;
-    padding: 5px;
+    padding: 3ex;
     border-radius: 0px 10px;
 }
 .a-plant span{
