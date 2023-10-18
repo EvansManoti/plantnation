@@ -44,13 +44,8 @@ body{
     padding: 13px;
 }
 
-#search-area input{
-    padding: 14px 14px;
-    margin: 10px;
-    border: 1px solid grey;
-    border-radius: 6px;
-}
-#search-area span{
+
+#search-area button{
     background-color: red;
     padding: 9px;
     margin: 0px 3px;
