@@ -13,3 +13,8 @@ function back(){
     }
     page = page -1;
 }
+paginationbtns[1].addEventListener('click', moveforward);
+function moveforward(){
+    console.log("moveforward")
+    page = page +1;
+}
