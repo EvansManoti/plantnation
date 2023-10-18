@@ -57,3 +57,49 @@ body{
     background-color: rgb(229, 36, 36, 0.5);
 }
 
+
+body{
+    position: relative;
+}
+#top-bar {
+    background-color: black;
+    color: red;
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 10px;    
+}
+
+#search-area{
+    margin-top: 13px;
+    padding: 13px;
+}
+
+#search-area input{
+    padding: 14px 14px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+#search-area span{
+    background-color: red;
+    padding: 9px;
+    margin: 0px 3px;
+    color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#search-area span:hover{
+    background-color: rgb(229, 36, 36, 0.5);
+}
+
+#all-plants{
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.a-plant img{
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
